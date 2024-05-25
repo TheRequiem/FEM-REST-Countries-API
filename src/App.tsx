@@ -7,12 +7,13 @@ import {
 } from "react-router-dom";
 import Home from "./components/Home";
 import Details from "./components/Details";
+import Header from "./components/Header";
 
 function App() {
   const Root = () => {
     return (
       <>
-        <h1>Heading</h1>
+        <Header />
         <div>
           <Outlet />
         </div>
