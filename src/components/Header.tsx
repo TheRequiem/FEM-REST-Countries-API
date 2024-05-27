@@ -11,7 +11,7 @@ const Header = () => {
   };
 
   return (
-    <header className="shadow-md dark:bg-dark-element">
+    <header className="shadow-md dark:bg-dark-element fixed w-full top-0">
       <div className="p-4 sm:py-4 sm:px-16 flex items-center justify-between">
         <h1 className="text-md sm:font-extrabold sm:text-3xl dark:text-dark-text">
           Where in the world?
@@ -22,7 +22,7 @@ const Header = () => {
           ) : (
             <MoonIcon className="sm:size-6 dark:text-dark-text size-3" />
           )}
-          <span className="text-sm sm:text-md font-semibold dark:text-dark-text">
+          <span className="text-sm sm:text-lg font-semibold dark:text-dark-text">
             Dark Mode
           </span>
         </button>

@@ -1,4 +1,5 @@
 /** @type {import('tailwindcss').Config} */
+
 export default {
   darkMode: "selector",
   content: [
@@ -15,8 +16,13 @@ export default {
         "light-bg": "hsl(0, 0%, 98%)",
         "dark-text": "hsl(0, 0%, 100%)",
         "light-element": "hsl(0, 0%, 100%)"
+      },
+      spacing: {
+        '128': '32rem'
       }
     },
   },
-  plugins: [],
+  plugins: [
+    require('tailwindcss-react-aria-components')
+  ],
 }
