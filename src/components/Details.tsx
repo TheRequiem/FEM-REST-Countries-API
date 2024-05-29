@@ -1,5 +1,5 @@
 export const Details = () => {
-  return <div className="dark:text-red-700">Details</div>;
+  return <h1 className="dark:text-red-700 mt-80">Details</h1>;
 };
 
 export default Details;
