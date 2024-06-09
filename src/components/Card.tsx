@@ -12,7 +12,7 @@ type CardProps = {
 const Card = (props: CardProps) => {
   return (
     <div className="flex flex-col drop-shadow-md bg-light-element dark:bg-dark-element w-48 sm:w-72 rounded-md m-10 sm:min-h-96">
-      <Link to="/details">
+      <Link to={`/details/${props.country}`}>
         <img src={props.flag} alt={props.alt} className="rounded-t-md" />
         <h2 className="dark:text-dark-text font-extrabold px-4 pb-2 pt-5 sm:pt-7">
           {props.country}
