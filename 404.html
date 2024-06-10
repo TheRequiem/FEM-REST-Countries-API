@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Page Not Found</title>
   <script type="text/javascript">
-    // Redirect to the base path while preserving the full path
+    // Preserve the path after the base path and redirect to the correct path under the base path
     var path = window.location.pathname.replace("/FEM-REST-Countries-API", "");
     window.location.replace("/FEM-REST-Countries-API" + path);
   </script>
