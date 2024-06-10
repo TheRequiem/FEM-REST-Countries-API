@@ -1,17 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Redirecting</title>
-  <meta http-equiv="refresh" content="0; url=/" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Page Not Found</title>
+  <script type="text/javascript">
+    // Redirect to the base path while preserving the full path
+    var path = window.location.pathname.replace("/FEM-REST-Countries-API", "");
+    window.location.replace("/FEM-REST-Countries-API" + path);
+  </script>
 </head>
 <body>
   <p>Redirecting...</p>
-  <script>
-    // Redirect to the base path
-    window.location.replace("/FEM-REST-Countries-API/");
-  </script>
 </body>
 </html>
