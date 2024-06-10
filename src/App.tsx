@@ -25,7 +25,10 @@ function App() {
         <Route index element={<Home />} />
         <Route path="/details/:country" element={<Details />} />
       </Route>
-    )
+    ),
+    {
+      basename: "/FEM-REST-Countries-API/",
+    }
   );
 
   return (

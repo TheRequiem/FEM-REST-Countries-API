@@ -1,9 +1,15 @@
 import { ArrowLeftIcon } from "@heroicons/react/24/solid";
+import { useNavigate } from "react-router-dom";
 
 const DetailsSkeleton = () => {
+  const navigate = useNavigate();
+  const handleBack = () => navigate(-1);
   return (
     <div className="flex flex-col md:flex-row md:gap-24 py-10 px-6 md:py-16 md:px-24 bg-light-bg dark:bg-dark-bg min-h-[calc(100vh-64px)] dark:text-dark-text">
-      <button className="fixed flex items-center font-light text-lg gap-2 rounded-md py-2 px-8 drop-shadow-md bg-light-element dark:bg-dark-element dark:text-dark-text w-32">
+      <button
+        className="fixed flex items-center font-light text-lg gap-2 rounded-md py-2 px-8 drop-shadow-md bg-light-element dark:bg-dark-element dark:text-dark-text w-32"
+        onClick={handleBack}
+      >
         <ArrowLeftIcon className="h-6 w-6" />
         Back
       </button>
