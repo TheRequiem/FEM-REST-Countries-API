@@ -4,20 +4,14 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Page Not Found</title>
+  <title>Redirecting</title>
   <meta http-equiv="refresh" content="0; url=/" />
-  <script>
-    // This script redirects the user to the correct route after the SPA is loaded
-    const redirectToCorrectRoute = () => {
-      const pathname = window.location.pathname.replace('/FEM-REST-Countries-API/', '');
-      if (pathname && pathname !== '/') {
-        window.location.replace(`/FEM-REST-Countries-API/${pathname}`);
-      }
-    };
-    redirectToCorrectRoute();
-  </script>
 </head>
 <body>
   <p>Redirecting...</p>
+  <script>
+    // Redirect to the base path
+    window.location.replace("/FEM-REST-Countries-API/");
+  </script>
 </body>
 </html>
