@@ -31,16 +31,6 @@ export const Details = () => {
     refetch();
   }, [country, refetch]);
 
-  useEffect(() => {
-    console.log("Fetch Data", {
-      fetchData,
-      isLoading,
-      isBorderLoading,
-      borderNames,
-      isFetching,
-    });
-  }, [fetchData, isLoading, isBorderLoading, borderNames, isFetching]);
-
   if (isLoading || isFetching) {
     return <DetailsSkeleton />;
   }

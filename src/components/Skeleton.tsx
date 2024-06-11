@@ -1,4 +1,4 @@
-const Skeletons = () => {
+const Skeleton = () => {
   return (
     <div className="flex flex-col drop-shadow-md bg-light-element dark:bg-dark-element w-48 sm:w-64 rounded-md m-10 h-80 animate-pulse">
       <div className="rounded-t-md bg-gray-300 dark:bg-gray-700 h-32 w-full"></div>
@@ -18,4 +18,4 @@ const Skeletons = () => {
   );
 };
 
-export default Skeletons;
+export default Skeleton;
